@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>St. Marys Clubs</title>
+<link href="Final/Final.css" rel="stylesheet" type="text/css" />
+<link href="FinalStyles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.slider img {
+	width:400px;
+	height:300px;
+	display:none;
+}
+-->
+</style>
+
+<script type="text/javascript" src="javascript/jquery-1.8.2.min.js"> </script>
+<script type="text/javascript" src="javascript/jquery.effects.core.js"> </script>
+<script type="text/javascript" src="javascript/jquery.effects.slide.js"> </script>
+<script type="text/javascript" src="javascript/jquery-ui-1.8.24.custom.min.js"> 
+</script>
+
+<script type="text/javascript">
+// Function that slides the pictures
+function Slider() {
+	//Show the first picture
+	$(".slider #1").show("blind", {direction:"right"}, 500);
+	//Wait 2.5 seconds and then hide the picture
+	$(".slider #1").delay(2500).hide("blind", {direction:"right"}, 500);
+	//How many pictures are there?
+	var sc= $(".slider img").size();
+	//Which picture comes next?
+	var count= 2;
+	
+	setInterval(function(){
+		//Show the next picture
+		$(".slider #" + count).show("blind", {direction:"right"}, 500);
+		//Wait 4 seconds and hide it
+		$(".slider #" + count).delay(4000).hide("blind", {direction:"right"}, 500);
+		
+		//If we are on the last picture, go back to the first
+		if(count==sc){
+			count=1;
+		}
+		//Otherwise, go to the next picture
+		else{
+			count=count+1
+		}
+	}, 5000);
+}
+</script>
+
+<script type="text/javascript">
+<!--
+//Preload all the images
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+
+<link href="JobStyles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<center>
+  <table width="900">
+    <tr>
+    <td width="200" height="150" align="center" bgcolor="#ff902e"><img src="Images/Circle.png" width="200" height="200" alt="Logo" /></td>
+    <td colspan="2" align="center" bgcolor="#ff2e38"><h1>Computer Based Jobs</h1>
+      <h2>Database Administrator</h2></td>
+    </tr>
+  <tr>
+    <td height="391" align="left" valign="top" bgcolor="#ff2e38">
+   
+    <p>&nbsp;&nbsp;&nbsp;<a href="Index.html">Home</a></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FBLA.html">FBLA</a></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FFA.html">FFA</a></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FCCLA.html">FCCLA</a></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FCA.html">FCA</a></p>
+      
+      </td>
+    <td width="471" valign="top" bgcolor="#ff5b2e">
+    
+      <div class="slider"> 
+    <center>
+<img id="1" <img src="images/FBLAStateGroup.JPG" width="500" height="350" title="FBLA Stare Group"	/>
+<img id="2" <img src="images/FBLABuisnessEthics.jpg" width="500" height="350" title="Buisness Ethics Team on Stage"	/>
+<img id="3" <img src="images/FBLAcomunityservice.JPG" width="500" height="350" title="Comunity Service Project"	/>
+<img id="4" <img src="images/FBLAplacers.JPG" width="500" height="350" title="State Placers"	/>
+    </center>
+    </div>
+  
+    <table  width="438" height="259" border=".25">
+      <tr>
+        <td colspan="2" bgcolor="#b5b3b2" border="1" >Summary based on 2012</td>
+        </tr>
+      <tr bgcolor="#e0dbd8">
+        <td> <a style="cursor: pointer"
+  onclick=" window.open('MedianPay.html','',' scrollbars=yes,menubar=no,width=500,height=400 resizable=yes,toolbar=no,location=no,status=no')">Median Pay</a>
+       </td>
+        <td>$37.06 per hour&nbsp;$77,080 per year</td>
+      </tr>
+     <tr bgcolor="#e0dbd8">
+        <td><a style="cursor: pointer"
+  onclick=" window.open('Education.html','',' scrollbars=yes,menubar=no,width=500,height=400 resizable=yes,toolbar=no,location=no,status=no')">Entry-Level Education</a></td>
+        <td>Bachelor’s degree</td>
+      </tr>
+     <tr bgcolor="#e0dbd8">
+        <td><a style="cursor: pointer"
+  onclick=" window.open('Experience.html','',' scrollbars=yes,menubar=no,width=500,height=400 resizable=yes,toolbar=no,location=no,status=no')">Work Experience</a></td>
+        <td>Under five years</td>
+      </tr>
+      <tr bgcolor="#e0dbd8">
+        <td><a style="cursor: pointer"
+  onclick=" window.open('Number.html','',' scrollbars=yes,menubar=no,width=500,height=400 resizable=yes,toolbar=no,location=no,status=no')">Number of Jobs</a></td>
+        <td>118,700</td>
+      </tr>
+      <tr bgcolor="#e0dbd8">
+        <td><a style="cursor: pointer"
+  onclick=" window.open('Outlook.html','',' scrollbars=yes,menubar=no,width=500,height=400 resizable=yes,toolbar=no,location=no,status=no')">Job Outlook</a></td>
+        <td>15% (Faster than average)</td>
+      </tr>
+    </table>
+     <div class="slider"> 
+    <center>
+<img id="1"	src="images/FFAGroup.png"  alt="FFA" />
+<img id="2" src="images/FBLAGroup.png"  alt="FBLA"  />
+<img id="3" src="images/FCCLAGroup.png"  alt="FCCLA"  />
+
+	</center>
+	</div>&nbsp;</p>
+</td>
+    <td width="217" align="center" valign="top" bgcolor="#ff902e"><p><strong>Database Administrator</strong></p>
+      <p>A Database Administrator is someone who organizes and stores important information and prevents the information to be accesed to someone not supposed to access that information such as personal finances and shipping information/records.</p>
+      <p>&nbsp;</p>
+    </tr>
+ 
+</table>
+</center>
+</body>
+</html>
