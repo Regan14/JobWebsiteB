@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web Deleveloper</title>
+<link href="Final/Final.css" rel="stylesheet" type="text/css" />
+<link href="FinalStyles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.slider img {
+	width:400px;
+	height:300px;
+	display:none;
+}
+-->
+</style>
+
+<script type="text/javascript" src="javascript/jquery-1.8.2.min.js"> </script>
+<script type="text/javascript" src="javascript/jquery.effects.core.js"> </script>
+<script type="text/javascript" src="javascript/jquery.effects.slide.js"> </script>
+<script type="text/javascript" src="javascript/jquery-ui-1.8.24.custom.min.js"> 
+</script>
+
+<script type="text/javascript">
+// Function that slides the pictures
+function Slider() {
+	//Show the first picture
+	$(".slider #1").show("blind", {direction:"right"}, 500);
+	//Wait 2.5 seconds and then hide the picture
+	$(".slider #1").delay(2500).hide("blind", {direction:"right"}, 500);
+	//How many pictures are there?
+	var sc= $(".slider img").size();
+	//Which picture comes next?
+	var count= 2;
+	
+	setInterval(function(){
+		//Show the next picture
+		$(".slider #" + count).show("blind", {direction:"right"}, 500);
+		//Wait 4 seconds and hide it
+		$(".slider #" + count).delay(4000).hide("blind", {direction:"right"}, 500);
+		
+		//If we are on the last picture, go back to the first
+		if(count==sc){
+			count=1;
+		}
+		//Otherwise, go to the next picture
+		else{
+			count=count+1
+		}
+	}, 5000);
+}
+</script>
+
+<script type="text/javascript">
+<!--
+//Preload all the images
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+
+</head>
+
+<body   onload='Slider();'>
+<center>
+<table width="900">
+  <tr>
+    <td width="200" height="150" align="center" bgcolor="#000000"><img src="images/web-developer.jpg" width="219" height="148" alt="Web Developer" /></td>
+    <td colspan="2" align="center" bgcolor="#000080"><h1>Web Developer</h1>
+      <h2>&nbsp;</h2></td>
+    </tr>
+  <tr>
+    <td height="745" align="left" valign="top" bgcolor="#000080">
+   
+    <p>&nbsp;&nbsp;&nbsp;<a href="Index.html">Web Developer </a></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FBLA.html"> Computer and Information Research Scientists</a><!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--></p>
+      <p>&nbsp;&nbsp;&nbsp;<a href="FFA.html">Database Adminstrayor </a></p>
+      <p>&nbsp;&nbsp;<a href="FCCLA.html">Info Secuity Analyst </a></p>
+      <p>&nbsp;&nbsp;<a href="FCA.html">Software Developers</a></p>
+      
+      <p>&nbsp;<a href="FCA.html">Computer Programmer </a></p>
+      <p><a href="FCA.html">Network and Computer Systems Administrators </a></p>
+      <p>
+        <!--td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;}--><a href="FCA.html"> Computer Network Architect</a></p>
+      <p><a href="FCA.html">Computer Network </a></p>
+      <p>&nbsp;</p></td>
+    <td width="471" align="left" valign="top" bgcolor="#FFFFFF">
+   
+    <div class="slider"> 
+    <center>
+<img id="1" src="images/w.JPG" width="400" height="300" alt="" title=""/>
+<img id="2"	src="images/ww.JPG"  alt="FFA Member" title=""/>
+<img id="3" src="images/www.JPG"  alt="FFA Member"  title=" "/>
+<img id="4" src="images/wwww.JPG"  alt="FFA Cattle Group" title="" />
+
+	</center>
+    </div>
+    <p>&nbsp;</p>
+   
+    <p>&nbsp;      </p>
+    <table width="424" height="251" border="1">
+      <tr>
+        <td width="204" bgcolor="#CCCCCC">Median Pay </td>
+        <td width="204" bgcolor="#CCCCCC">$76,000 per year <br />
+          $26.02 per hour</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">Entry-Level Education</td>
+        <td bgcolor="#CCCCCC">Bachelor's degree</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">On the Job Tranning</td>
+        <td bgcolor="#CCCCCC">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">Work experience </td>
+        <td bgcolor="#CCCCCC">None</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">Number of Jobs </td>
+        <td bgcolor="#CCCCCC">78,000+</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">Job Outlook</td>
+        <td bgcolor="#CCCCCC">20% (Faster than average)</td>
+      </tr>
+      <tr>
+        <td bgcolor="#CCCCCC">Employment Change</td>
+        <td bgcolor="#CCCCCC">28,500</td>
+      </tr>
+    </table>
+    <p><br />
+</p></td>
+    <td width="217" align="center" valign="top" bgcolor="#c0c0c0"><p>&nbsp;</p>
+      <h2 align="center"><strong>PC programers to me basically run everything in the cyber world. From creating websites to computer applications</strong></h2>
+<p>&nbsp;</p>
+    <p>&nbsp;</p></tr>
+ 
+</table>
+</center>
+</body>
+</html>
